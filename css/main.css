@@ -81,7 +81,7 @@
 
 .img1-container {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 725px;
     display: flex;
     flex-direction:row;
     justify-content: center;
@@ -100,13 +100,6 @@
     padding-top: 125px;
 
 }
-
-.date {
-    display:flex;
-    align-content: left;
-
-}
-
 .date2 {
     display: flex;
     
@@ -137,7 +130,7 @@ display: inline-block;
     display: grid;
     grid-area: showtimes;
     padding-left: 33.3vw;
-    padding-top: 1vh;
+    padding-top:0;
 }
 
 .buttondate{
