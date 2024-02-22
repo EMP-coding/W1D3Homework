@@ -1,0 +1,73 @@
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 150px 1fr 150px; 
+    grid-template-rows: 1fr 3.5fr 306px 2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "theatre navbar navbar"
+      ". img ."
+      ". showtimes ."
+      ". bottom ."; 
+  }
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+
+.img1 {
+    grid-area: img; 
+    
+}
+
+.navbar {
+    background-color: black;
+    height: 20vh;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.bottom {
+    grid-area: bottom; 
+}
+
+
+.theatre {
+    grid-area: theatre;
+    font-size: x-large;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    height: 20vh;
+}
+
+.theatre > a {
+    color: white;
+    text-decoration: none;
+}
+
+.showtimes {
+    grid-area: showtimes;
+}
+
+
+
+
+.img1-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
