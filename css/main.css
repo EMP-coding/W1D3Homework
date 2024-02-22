@@ -18,20 +18,21 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
+    font-size: large;
 }
 
 
 .img1{
     grid-area: img;
-    align-self: center;
+    align-self: top;
     padding: 0px;
     margin: 0;
     
 }
 
 .navbar {
-    background-color: black;
-    height: 150%;
+    background-image: linear-gradient(rgb(195, 26, 26), rgb(7, 7, 7));
+    height: 130%;
     position: sticky;
     top: 0;
     display: grid; 
@@ -76,76 +77,60 @@
     text-align: center;
 }
 
-.showtimes {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: repeat(4, 1fr); 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "one"
-    "two"
-    "three"
-    "four"; 
-    grid-area: showtimes; 
-    margin-top: 150px;
-    justify-items: center;
-}
+
 
 .img1-container {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 725px;
     display: flex;
     flex-direction:row;
     justify-content: center;
 }
 
 
-
+.mainbutton {
+    padding-right: 35vw;
+}
 
 .showtimebox {
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-around;
+    align-items: center;
     width: auto;
-}
+    padding-top: 125px;
 
-.date {
-    display:flex;
-    align-content: left;
 }
-
 .date2 {
     display: flex;
     
 }
 
 .img2 {
-    max-width: 200px;
-    max-height: 200px;
-    padding: 35px;
+margin-left: 15vw;
+    
 }
 
 
 .textcontainer {
 color: black;
-margin-top: 35px;
+display: inline-block;
+
 }
 
-.mainbutton{
-    padding-top: 100px;
-    padding-left: 100px;
-}
+
 #buttonmain {
     height: 35px;
-    background-color: orange;
+    background-image:linear-gradient(orange,rgb(255, 198, 93)) ;
     border: 1px solid rgb(196, 128, 3);
 }
+
 
 
 .datebutton {
     display: grid;
     grid-area: showtimes;
     padding-left: 33.3vw;
-    padding-top: 15vh;
+    padding-top:0;
 }
 
 .buttondate{
@@ -155,3 +140,12 @@ margin-top: 35px;
 
 }
  
+
+.showtimes { grid-area: showtimes;
+}
+
+
+
+.play {
+    font-size: larger;
+}
