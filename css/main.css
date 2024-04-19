@@ -1,45 +1,28 @@
 .container {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.1fr 1fr 2fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "navbar"
-    "img"
-    "showtimes"
-    "bottom"; 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 
 .nav-links {
-    height: 400%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    font-size: large;
+    font-size:medium;
 }
-
-
-
-    
-
 
 .navbar {
     background-image: linear-gradient(rgb(195, 26, 26), rgb(7, 7, 7));
-    height: 130%;
-    position: sticky;
+    height: 50px;
+    position: fixed;
     top: 0;
-    display: grid; 
-    grid-template-columns: 0.3fr 1.7fr 1fr; 
-    grid-template-rows: 0.8fr 1.2fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    ". . ."
-    "theatre . ."
-    ". . ."; 
-    grid-area: navbar; 
+    display: flex;
+    
+    
 }
 
 .home > a {
@@ -49,11 +32,7 @@
     
 }
 
-.home {
-    display: grid;
-    grid-area: theatre;
-    margin-left: 5vw;
-}
+
 
 .nav-links > a {
     color: white;
@@ -79,35 +58,35 @@
 }
 
 .img1-container {
-    display: grid;
-    grid-area: img;
+    display: flex;
+    justify-content: center;
 
     
 }
 #mainimg {
-    max-width: 1000px;
+    max-width: 75%;
+    margin-top: 42px;
 }
 
 
 
 .mainbutton {
-padding-left: 150px;
+padding-left: 100px;
 }
 
 
 .showtimes { 
-    grid-area: showtimes;
-    margin-top: 150px;
-    margin-left: 12vw;
+    display: flex;
+    flex-direction: column;
     
     
-   
+    
 }
 .showtimebox {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1500px;
+    max-width: 100%;
     padding-top: 0px;
     border-bottom:1px solid rgb(134, 133, 133);
     
@@ -128,7 +107,10 @@ padding-left: 150px;
 
 .textcontainer {
 color: black;
-display: inline-block;
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+
 
 }
 
@@ -142,19 +124,22 @@ display: inline-block;
 
 
 .datebutton {
-    display: grid;
-    grid-area: showtimes;
-    padding-left: 33.3vw;
-    padding-top:0;
+    margin-top: 25px;
+    padding: 5px;
+    display: flex;
+    width: 37%;
+    justify-content: center;
+    min-width: 300px;
+
+    
 }
 
 .buttondate{
-    max-width: 35vw;
-    max-height: 20px;
-    justify-content: left;
+    width: 100%;
+    
 
 }
- 
+
 
 
 
