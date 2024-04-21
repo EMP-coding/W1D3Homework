@@ -127,7 +127,7 @@ padding-left: 20px;
     margin-top: 25px;
     padding: 5px;
     display: flex;
-    width: 37%;
+    width: 40%;
     justify-content: center;
     min-width: 300px;
 
@@ -147,4 +147,79 @@ padding-left: 20px;
 
 .play {
     font-size: larger;
+}
+
+.bottom-nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding: 35px;
+    max-height: 200px;
+    min-width: 750px;
+    
+}
+
+#map {
+width: 10%;
+min-width: 100px;
+margin-top: 20px;
+
+}
+
+.nav-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-shows {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    right: 5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: white ;
+    font-size: small;
+    
+}
+
+.nav-icons {
+    width: min-content;
+    position: relative;
+    
+}
+.icon {
+    color: orange;
+    margin-right: 5px;
+}
+
+.header {
+    text-align: left;
 }
